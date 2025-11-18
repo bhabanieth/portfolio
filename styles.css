@@ -498,6 +498,7 @@ body {
     background-clip: text;
 }
 
+<<<<<<< HEAD
 .avatar-svg {
     width: 100%;
     height: 100%;
@@ -556,6 +557,8 @@ body {
     }
 }
 
+=======
+>>>>>>> 006c9e6b31c5c2a7add63d0c414877ccc6cb53ad
 /* ===================================
    SKILLS SECTION
    =================================== */
@@ -886,7 +889,7 @@ body {
 }
 
 .contact-form {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 20px;
 }
