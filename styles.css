@@ -498,6 +498,64 @@ body {
     background-clip: text;
 }
 
+.avatar-svg {
+    width: 100%;
+    height: 100%;
+    animation: avatarBounce 3s ease-in-out infinite;
+}
+
+@keyframes avatarBounce {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.avatar-head {
+    animation: headTilt 2s ease-in-out infinite;
+}
+
+@keyframes headTilt {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: 100px 70px;
+    }
+    50% {
+        transform: rotate(5deg);
+        transform-origin: 100px 70px;
+    }
+}
+
+.avatar-eye {
+    animation: eyeBlink 3s ease-in-out infinite;
+}
+
+@keyframes eyeBlink {
+    0%, 10%, 90%, 100% {
+        cy: 65;
+    }
+    45%, 55% {
+        cy: 68;
+    }
+}
+
+.avatar-smile {
+    animation: smilePulse 2s ease-in-out infinite;
+}
+
+@keyframes smilePulse {
+    0%, 100% {
+        stroke-width: 2;
+        opacity: 1;
+    }
+    50% {
+        stroke-width: 2.5;
+        opacity: 0.8;
+    }
+}
+
 /* ===================================
    SKILLS SECTION
    =================================== */
