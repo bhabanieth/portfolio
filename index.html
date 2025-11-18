@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhabanishankar Nayak - Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i> Bhabanishankar
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="letter" style="--i:0">H</span>
+                    <span class="letter" style="--i:1">i</span>
+                    <span class="letter" style="--i:2">,</span>
+                    <span class="letter" style="--i:3">I</span>
+                    <span class="letter" style="--i:4">'</span>
+                    <span class="letter" style="--i:5">m</span>
+                    <span class="letter" style="--i:6">B</span>
+                    <span class="letter" style="--i:7">h</span>
+                    <span class="letter" style="--i:8">a</span>
+                    <span class="letter" style="--i:9">b</span>
+                    <span class="letter" style="--i:10">a</span>
+                    <span class="letter" style="--i:11">n</span>
+                    <span class="letter" style="--i:12">i</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer | Web Enthusiast | Tech Innovator</p>
+                <p class="hero-description">Crafting digital experiences with modern technologies and creative solutions</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-laptop-code"></i>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="floating-card" style="animation-delay: 1s;">
+                    <div class="card-content">
+                        <i class="fas fa-database"></i>
+                        <p>Backend Systems</p>
+                    </div>
+                </div>
+                <div class="floating-card" style="animation-delay: 2s;">
+                    <div class="card-content">
+                        <i class="fas fa-brain"></i>
+                        <p>AI/ML Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Full Stack Developer with expertise in building scalable web applications and innovative solutions. With a strong foundation in Python, JavaScript, and modern web technologies, I love turning ideas into reality.</p>
+                    <p>My journey in tech started with curiosity and has evolved into a comprehensive skill set spanning frontend development, backend systems, data analysis, and AI/ML projects.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>19+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI/ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-star"></i> Other</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Web Animation</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Notes Sharing App</h3>
+                        <p>A collaborative platform for sharing and managing notes with real-time synchronization.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Firebase</span>
+                            <span>PWA</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/notes-sharing-app" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather API</h3>
+                        <p>Real-time weather application with location-based forecasting and beautiful UI.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Weather API</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/Weather_API" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Interactive game with AI opponent and smooth animations for entertainment.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>AI Logic</span>
+                            <span>Game Dev</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/tictactoe" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>EBook Python</h3>
+                        <p>Comprehensive study guide on Python programming with detailed explanations.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>Python</span>
+                            <span>Educational</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/EbookPython" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gesture Control</h3>
+                        <p>Python-based project using OpenCV for hand gesture music control.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>AI/ML</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/GESTURE-CONTROLL-USING-PYTHON" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Python Calculator</h3>
+                        <p>Feature-rich GUI calculator built with Python for performing calculations.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>GUI</span>
+                            <span>Tkinter</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/CALCULATOR-USING-PYTHON" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-wheel"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Roulette Wheel</h3>
+                        <p>Interactive spinning wheel game with dynamic animations and effects.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>Canvas API</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/Roulette-Wheel" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Class Schedule</h3>
+                        <p>Weekly class schedule management system with clean UI.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Organization</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/WeeklyClassSchedule" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-bar-chart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>IPL 2025 Data Analysis</h3>
+                        <p>Comprehensive data analysis of Indian Premier League 2025 statistics.</p>
+                        <div class="project-tags">
+                            <span>Jupyter</span>
+                            <span>Pandas</span>
+                            <span>Data Science</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/IPL_2025_Data_Analysis_Project" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <i class="fas fa-chrome"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Chrome Clone</h3>
+                        <p>Browser clone project demonstrating advanced web technologies.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/Chrome-Clone" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 11 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Result System</h3>
+                        <p>Web-based student result management system with database integration.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/Student_Result_Management_System" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 12 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Self Driving Car</h3>
+                        <p>Python-based simulation of autonomous vehicle using AI algorithms.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Computer Vision</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/Self-driving-car" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 13 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>ML HelpBook</h3>
+                        <p>Comprehensive notebook for Machine Learning concepts and implementations.</p>
+                        <div class="project-tags">
+                            <span>Jupyter</span>
+                            <span>Python</span>
+                            <span>ML</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/ML-HelpBook" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 14 -->
+                <div class="project-card bento-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-python"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Python Fullstack</h3>
+                        <p>Complete training repository for Python Fullstack development.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Full Stack</span>
+                            <span>Training</span>
+                        </div>
+                        <a href="https://github.com/BHABANISHANKAR-01/Python-Fullstack" class="project-link" target="_blank">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="social-links">
+                        <a href="https://github.com/BHABANISHANKAR-01" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://twitter.com" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="mailto:your.email@example.com" class="social-link">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bhabanishankar Nayak. All rights reserved.</p>
+            <p>Built with <i class="fas fa-heart"></i> and lots of coffee ☕</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
