@@ -557,8 +557,13 @@ body {
     }
 }
 
-=======
->>>>>>> 006c9e6b31c5c2a7add63d0c414877ccc6cb53ad
+.avatar-svg-contact {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    animation: avatarBounce 3s ease-in-out infinite;
+}
+
 /* ===================================
    SKILLS SECTION
    =================================== */
@@ -837,12 +842,22 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    align-items: center;
     position: relative;
     z-index: 1;
 }
 
 .contact-info {
     color: white;
+}
+
+.contact-avatar {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-info h3 {
@@ -1067,6 +1082,11 @@ body {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 40px;
+        align-items: flex-start;
+    }
+
+    .contact-avatar {
+        max-width: 250px;
     }
 
     .social-links {
