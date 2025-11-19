@@ -106,8 +106,8 @@
                 </div>
                 <div class="about-visual">
                     <div class="about-image">
-                        <!-- 3D Avatar Canvas -->
-                        <canvas id="avatarCanvas"></canvas>
+                        <!-- 3D Solar System Canvas -->
+                        <canvas id="solarSystemCanvas"></canvas>
                     </div>
                 </div>
             </div>
@@ -596,6 +596,52 @@
             renderer.render(scene, camera);
         }
         animate();
+    </script>
+
+    <!-- Script for Solar System Animation -->
+    <script>
+        // Solar System Animation
+        const solarScene = new THREE.Scene();
+        const solarCamera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+        const solarRenderer = new THREE.WebGLRenderer({ canvas: document.getElementById('solarSystemCanvas'), alpha: true });
+        solarRenderer.setSize(300, 300);
+
+        // Create the sun
+        const sunGeometry = new THREE.SphereGeometry(1, 32, 32);
+        const sunMaterial = new THREE.MeshStandardMaterial({ color: 0xffcc00 });
+        const sun = new THREE.Mesh(sunGeometry, sunMaterial);
+        solarScene.add(sun);
+
+        // Create planets
+        const planetGeometry = new THREE.SphereGeometry(0.2, 32, 32);
+        const planetMaterial = new THREE.MeshStandardMaterial({ color: 0x0077ff });
+        const planet = new THREE.Mesh(planetGeometry, planetMaterial);
+        solarScene.add(planet);
+
+        // Add lighting
+        const solarLight = new THREE.PointLight(0xffffff, 1, 100);
+        solarLight.position.set(5, 5, 5);
+        solarScene.add(solarLight);
+
+        // Position the camera
+        solarCamera.position.z = 5;
+
+        // Animation loop
+        let angle = 0;
+        function animateSolarSystem() {
+            requestAnimationFrame(animateSolarSystem);
+
+            // Rotate the sun
+            sun.rotation.y += 0.01;
+
+            // Orbit the planet around the sun
+            angle += 0.01;
+            planet.position.x = Math.cos(angle) * 2;
+            planet.position.z = Math.sin(angle) * 2;
+
+            solarRenderer.render(solarScene, solarCamera);
+        }
+        animateSolarSystem();
     </script>
 </body>
 </html>
